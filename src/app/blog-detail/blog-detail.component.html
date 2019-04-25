@@ -1,0 +1,14 @@
+<div *ngIf="blog" class="container">
+
+  <h2>{{blog.title}</h2>
+  <p>{{blog.details}}</p>
+  <div>
+    <label>Title:
+      <input [(ngModel)]="blog.title" placeholder="Title"/>
+    </label>
+    <label>Details:
+      <input [(ngModel)]="blog.details" placeholder="Details"/>
+    </label>
+  </div>
+
+</div>

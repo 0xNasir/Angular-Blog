@@ -1,0 +1,7 @@
+<app-blog-detail [blog]="selectedBlog"></app-blog-detail>
+<div class="container">
+	<div class="single-blog" *ngFor="let blog of blog_list" (click)="onSelect(blog)">
+		<h2>{{blog.title}}</h2><small>{{blog.category}}</small>
+		<p>{{blog.details}}</p>
+	</div>
+</div>
